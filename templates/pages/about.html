@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!-- Body -->
+  <div id="wrapper">
+    <div class="wrapper-inner">
+	  {% include 'partial_menu.html' %}
+    <!-- Feature -->
+      <div class="bg_cont">
+      <!-- Maintop -->
+      <!-- Main Content row -->
+        <div id="content-row">
+          <div class="row-container">
+            <div class="container">
+              <div class="content-inner row">
+                <!-- Left sidebar -->
+                  <div id="component" class="span8">
+                  <!-- Breadcrumbs -->
+                    <div class="page-item page-item__gallery">
+                  		<div class="item_header">
+                    		<h3 class="item_title">
+                          <span class="item_title_part0">About</span> <span class="item_title_part1">Us</span>
+                        </h3>
+                      </div>
+                			<div class="item_img img-full img-full__left item-image">
+                        <img src="{% static 'images/photo.jpg' %}" alt=""/>
+                      </div>
+                    	<div class="item_fulltext"><p>Our office has been serving the Salinas areas since the 1950's. It was originally started by Dr. Lyman Lowe in the 50's and then handed down to Dr. Malcome Lowe. With recent passing of Dr. Malcome Lowe the office has been led by Dr. James Kim who used to associate at the office 2 years ago. Lots of our patients and their families have been coming to our dental office over generations because we have become part of their family.</p>
+                        <p>We are small a dental office where we get to know our patients on a personal level and provide great dental care for the whole family. You won't feel like as if you're just another patient at our office, but we will treat you just like how we would like to be treated at a doctor's office. We hardly have patients waiting out in the lobby for a long time because we know that your time is very precious. If you are looking for an office with friendly atomsphere with great service and dental care then you have come to the right place!</p>
+                      </div>
+    		            </div>
+                  </div>
+                  {% include 'partial_hours.html' %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

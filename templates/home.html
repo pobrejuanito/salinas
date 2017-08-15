@@ -1,0 +1,441 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+  <!-- Body -->
+  <div id="wrapper">
+    <div class="wrapper-inner">
+
+	<div class="bg_top">
+
+    <!-- Top -->
+    <div id="top-row">
+        <div class="row-container">
+          <div class="container">
+            <div id="top" class="row">
+              <div class="moduletable navigation  span12">
+<ul class="sf-menu">
+<li class="item-101 current active"><a href="/" >Main</a></li>
+<li class="item-169 deeper dropdown parent"><a href="/about.html" >About</a>
+	<ul class="sub-menu">
+		<li class="item-278"><a href="our-team.html" >Our Doctors</a></li>
+		<li class="item-291"><a href="our-staff.html" >Our Staff</a></li>
+	</ul>
+</li>
+<li class="item-109"><a href="/braces.html" >6 Month Braces</a></li>
+<li class="item-173 deeper dropdown parent"><a href="/services.html" >Services</a>
+	<ul class="sub-menu">
+		<li class="item-279"><a href="/services/bonding-and-white-filling.html" >Bond &amp; Fill</a></li>
+		<li class="item-280"><a href="/services/bridges.html" >Bridges</a></li>
+		<li class="item-281"><a href="/services/crowns.html" >Crowns</a></li>
+		<li class="item-282"><a href="/services/dentures.html" >Dentures</a></li>
+		<li class="item-283"><a href="/services/extractions.html" >Extractions</a></li>
+		<li class="item-284"><a href="/services/whitening.html" >Whitening</a></li>
+		<li class="item-285"><a href="/services/implants.html" >Implants</a></li>
+		<li class="item-286"><a href="/services/night-guards.html" >Night Guards</a></li>
+		<li class="item-287"><a href="/services/veneers.html" >Veneers</a></li>
+		<li class="item-288"><a href="/services/tmj.html" >TMJ</a></li></ul></li>
+		<li class="item-102"><a href="/contact.html" >Contact</a></li>
+	</ul>
+<script type="text/javascript">
+	// initialise plugins
+	jQuery(function(){
+		jQuery('ul.sf-menu')
+
+		.superfish({
+			hoverClass:    'sfHover',
+	    pathClass:     'overideThisToUse',
+	    pathLevels:    1,
+	    delay:         500,
+	    animation:     {opacity:'show', height:'show'},
+	    speed:         'normal',
+	    speedOut:      'fast',
+	    autoArrows:    false,
+	    disableHI:     false,
+	    useClick:      0,
+	    easing:        "swing",
+	    onInit:        function(){},
+	    onBeforeShow:  function(){},
+	    onShow:        function(){},
+	    onHide:        function(){},
+	    onIdle:        function(){}
+		});
+				jQuery('.sf-menu').mobileMenu({
+			defaultText: 'Navigate to...',
+			className: 'select-menu',
+			subMenuClass: 'sub-menu'
+		});
+
+		var ismobile = navigator.userAgent.match(/(iPhone)|(iPod)|(android)|(webOS)/i)
+		if(ismobile){
+			jQuery('.sf-menu').sftouchscreen({});
+		}
+		jQuery('.btn-sf-menu').click(function(){
+			jQuery('.sf-menu').toggleClass('in')
+		});
+	})
+</script></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Header -->
+      <div id="header-row">
+        <div class="row-container">
+          <div class="container">
+            <header>
+              <div class="row">
+                  <!-- Logo -->
+                  <div id="logo" class="span12">
+                    <a href="/">
+                      <img src="{% static 'images/ss_logo_fit.png' %}" alt="James D. Kim DDS Family Dentistry, SalinasSmiles Dental Group" />
+                    </a>
+                  </div>
+
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+
+    <!-- Navigation -->
+
+    <!-- Showcase -->
+          <div id="showcase-row">
+        <div class="row-container">
+          <div class="container">
+            <div class="row">
+                <div class="moduletable   span12">
+
+<div id="camera-slideshow" class="  camera_wrap pattern_1">
+
+<div class="camera-item" data-src="{% static 'images/slide3.jpg' %}" data-thumb="{% static 'images/photo.jpg' %}" data-link="" data-target="_self">
+
+			<div class="camera_caption fadeIn">
+
+
+				<h4 class="slide-title">
+									Friendly Staff and Beautiful Smiles								</h4>
+
+
+
+
+						<p>Our office has been serving the Salinas areas since the 1950's. It was originally started by Dr. Lyman Lowe in the 50's and then handed down to Dr. Malcome Lowe. With recent passing of Dr. Malcome Lowe the office has been led by Dr. James Kim who used to associate at the office 2 years ago. Lots of our patients and their families have been coming to our dental office over generations because we have become part of their family.</p>
+<p>We are small a dental office where we get to know our patients on a personal level and provide great dental care for the whole family. You won't feel like as if you're just another patient at our office, but we will treat you just like how we would like to be treated at a doctor's office. We hardly have patients waiting out in the lobby for a long time because we know that your time is very precious. If you are looking for an office with friendly atomsphere with great service and dental care then you have come to the right place!</p>
+		<!-- Read More link -->
+
+		</div>
+
+</div>
+
+<div class="camera-item" data-src="{% static 'images/slide-2.jpg' %}" data-thumb="/" data-link="" data-target="_self">
+
+			<div class="camera_caption fadeIn">
+
+
+				<h4 class="slide-title">
+									Friendly Atomsphere, Great Service								</h4>
+
+
+
+
+						<p>Maecenas blandit semper iaculis. Phasellus quis quam orci</p>
+
+		<!-- Read More link -->
+
+		</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery('#camera-slideshow').camera({
+			alignment			: "center", //topLeft, topCenter, topRight, centerLeft, center, centerRight, bottomLeft, bottomCenter, bottomRight
+			autoAdvance				: true,	//true, false
+			mobileAutoAdvance	: true, //true, false. Auto-advancing for mobile devices
+
+			barDirection			: "leftToRight",	//'leftToRight', 'rightToLeft', 'topToBottom', 'bottomToTop'
+			barPosition				: "bottom",	//'bottom', 'left', 'top', 'right'
+			cols							: 6,
+			easing						: "swing",	//for the complete list http://jqueryui.com/demos/effect/easing.html
+			mobileEasing			: "swing",	//leave empty if you want to display the same easing on mobile devices and on desktop etc.
+			fx								: "simpleFade",
+			mobileFx					: "simpleFade",		//leave empty if you want to display the same effect on mobile devices and on desktop etc.
+			gridDifference		: 250,	//to make the grid blocks slower than the slices, this value must be smaller than transPeriod
+			height						: "53,54%",	//here you can type pixels (for instance '300px'), a percentage (relative to the width of the slideshow, for instance '50%') or 'auto'
+			// imagePath					: 'images/',	//the path to the image folder (it serves for the blank.gif, when you want to display videos)
+			hover							: false,	//true, false. Puase on state hover. Not available for mobile devices
+			loader						: "none",	//pie, bar, none (even if you choose "pie", old browsers like IE8- can't display it... they will display always a loading bar)
+			loaderColor				: "#eeeeee",
+			loaderBgColor			: "#222222",
+			loaderOpacity			: .8,	//0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1
+			loaderPadding			: 2,	//how many empty pixels you want to display between the loader and its background
+			loaderStroke			: 7,	//the thickness both of the pie loader and of the bar loader. Remember: for the pie, the loader thickness must be less than a half of the pie diameter
+			minHeight					: "787px",	//you can also leave it blank
+			navigation				: false,	//true or false, to display or not the navigation buttons
+			navigationHover		: false,	//if true the navigation button (prev, next and play/stop buttons) will be visible on hover state only, if false they will be 	visible always
+			mobileNavHover		: false,	//same as above, but only for mobile devices
+			opacityOnGrid			: false,	//true, false. Decide to apply a fade effect to blocks and slices: if your slideshow is fullscreen or simply big, I recommend to set it false to have a smoother effect
+			overlayer					: false,	//a layer on the images to prevent the users grab them simply by clicking the right button of their mouse (.camera_overlayer)
+			pagination				: true,
+			playPause					: false,	//true or false, to display or not the play/pause buttons
+			pauseOnClick			: false,	//true, false. It stops the slideshow when you click the sliders.
+			pieDiameter				: 38,
+			piePosition				: "rightTop",	//'rightTop', 'leftTop', 'leftBottom', 'rightBottom'
+			portrait					: false, //true, false. Select true if you don't want that your images are cropped
+			rows							: 4,
+			slicedCols				: 6,	//if 0 the same value of cols
+			slicedRows				: 4,	//if 0 the same value of rows
+			// slideOn				: "",	//next, prev, random: decide if the transition effect will be applied to the current (prev) or the next slide
+			thumbnails				: false,
+			time							: 7000,	//milliseconds between the end of the sliding effect and the start of the nex one
+			transPeriod				: 1500	//lenght of the sliding effect in milliseconds
+			// onEndTransition		: function() {  },	//this callback is invoked when the transition effect ends
+			// onLoaded					: function() {  },	//this callback is invoked when the image on a slide has completely loaded
+			// onStartLoading		: function() {  },	//this callback is invoked when the image on a slide start loading
+			// onStartTransition	: function() {  }	//this callback is invoked when the transition effect starts
+		});
+	});
+</script>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	</div>
+
+    <!-- Feature -->
+          <div id="feature-row">
+        <div class="row-container">
+          <div class="container">
+            <div class="row">
+                <div class="moduletable box1  span3">
+<div class="mod-article-single mod-article-single__box1">
+	<div class="item__module">
+
+		<!-- Intro Image -->
+											<div class="item_img img-intro img-intro__">
+						<a href="/braces.html">
+						<img
+								src="{% static 'images/block-powerprox.png' %}" alt=""/>
+								</a>
+								</div>
+
+		<!-- Item Title -->
+					<h4 class="item-title">
+									Beautiful Smiles in 6 Months!							</h4>
+
+		<!-- Publish Date -->
+
+		<!-- Intro Text -->
+		<div class="item_introtext">
+						<a class="btn btn-info readmore" href="/braces.html"><span>more</span></a>		</div>
+	</div>
+
+
+</div></div><div class="moduletable box2  span3">
+<div class="mod-article-single mod-article-single__box2">
+	<div class="item__module">
+
+		<!-- Intro Image -->
+											<div class="item_img img-intro img-intro__">
+						<a href="/crown-in-one-appointment.html">
+						<img
+								src="{% static 'images/block-cerec.png' %}" alt=""/>
+								</a>
+								</div>
+
+		<!-- Item Title -->
+					<h4 class="item-title">
+									A Crown in ONE Appointment!							</h4>
+
+		<!-- Publish Date -->
+
+		<!-- Intro Text -->
+		<div class="item_introtext">
+						<a class="btn btn-info readmore" href="/crown-in-one-appointment.html"><span>more</span></a>		</div>
+	</div>
+
+
+</div></div><div class="moduletable welcome  span6"><h3 class="moduleTitle "><span class="item_title_part0">Welcome!</span> </h3>
+<div class="mod-article-single mod-article-single__welcome">
+	<div class="item__module">
+
+		<!-- Intro Image -->
+
+		<!-- Item Title -->
+
+		<!-- Publish Date -->
+
+		<!-- Intro Text -->
+		<div class="item_introtext">
+			<h2>Friendly Staff. Beautiful Smiles. Welcoming Environment</h2>
+<p>We are always welcoming new patients and we would love to have you as part of our dental family.  Call us at <strong>(831)-424-4230</strong></p>
+			<a class="btn btn-info readmore" href="/welcome.html"><span>more</span></a>		</div>
+	</div>
+
+
+</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="bg_cont">
+
+    <!-- Maintop -->
+          <div id="maintop-row">
+        <div class="row-container">
+          <div class="container">
+            <div id="maintop" class="row">
+              <div class="moduletable blocks  span3"><h3 class="moduleTitle "><span class="item_title_part0">Maps</span> <span class="item_title_part1">&</span> <span class="item_title_part2">Hours</span> </h3>
+<div class="mod-article-single mod-article-single__blocks">
+	<div class="item__module">
+
+		<!-- Intro Image -->
+											<div class="item_img img-intro img-intro__">
+						<a href="/39-blocks/111-maps-hours.html">
+						<img
+								src="{% static 'images/block-direction.png' %}" alt=""/>
+								</a>
+								</div>
+
+		<!-- Item Title -->
+
+		<!-- Publish Date -->
+
+		<!-- Intro Text -->
+		<div class="item_introtext">
+					</div>
+			<a class="link" href="/39-blocks/111-maps-hours.html"><span>learn more</span></a>	</div>
+
+
+</div></div><div class="moduletable blocks  span3"><h3 class="moduleTitle "><span class="item_title_part0">Appointments</span> </h3>
+<div class="mod-article-single mod-article-single__blocks">
+	<div class="item__module">
+
+		<!-- Intro Image -->
+											<div class="item_img img-intro img-intro__">
+						<a href="contact/appointments.html">
+						<img
+								src="{% static 'images/block-calendar.png' %}" alt=""/>
+								</a>
+								</div>
+
+		<!-- Item Title -->
+
+		<!-- Publish Date -->
+
+		<!-- Intro Text -->
+		<div class="item_introtext">
+			<h1>Call (831)-424-4230</h1>		</div>
+			<a class="link" href="/contact.html"><span>learn more</span></a>	</div>
+
+
+</div></div><div class="moduletable blocks  span3"><h3 class="moduleTitle "><span class="item_title_part0">Our</span> <span class="item_title_part1">Reviews</span> </h3>
+<div class="mod-article-single mod-article-single__blocks">
+	<div class="item__module">
+
+		<!-- Intro Image -->
+											<div class="item_img img-intro img-intro__">
+						<a href="https://www.yelp.com/biz/james-d-kim-dds-salinas" target="_blank">
+						<img
+								src="{% static 'images/block-reviews.png' %}" alt=""/>
+								</a>
+								</div>
+
+		<!-- Item Title -->
+
+		<!-- Publish Date -->
+
+		<!-- Intro Text -->
+		<div class="item_introtext">
+			<p>Checkout our ratings and reviews on <a href="http://www.yelp.com/biz/james-d-kim-dds-salinas">Yelp</a>!</p>		</div>
+			<a class="link" href="https://www.yelp.com/biz/james-d-kim-dds-salinas" target="_blank"><span>learn more</span></a>	</div>
+
+
+</div></div><div class="moduletable blocks  span3"><h3 class="moduleTitle "><span class="item_title_part0">Clear</span> <span class="item_title_part1">Braces!</span> </h3>
+<div class="mod-article-single mod-article-single__blocks">
+	<div class="item__module">
+
+		<!-- Intro Image -->
+											<div class="item_img img-intro img-intro__">
+						<a href="/invisalign.html">
+						<img
+								src="{% static 'images/invisi.jpg' %}" alt=""/>
+								</a>
+								</div>
+
+		<!-- Item Title -->
+
+		<!-- Publish Date -->
+
+		<!-- Intro Text -->
+		<div class="item_introtext">
+			<h2>Why Invisalign Treatment</h2>
+<p>Choose the clear aligner system committed to continuous innovation, with 20 years of clinical research and more than 700 patents. No other clear aligner is backed by the data and experience of 4 million cases.</p>
+<h2><strong>Up to 50% faster treatment times</strong></h2>
+<p>With weekly aligner changes, you’re on your way to the smile you want even faster.</p>
+<h2><strong>Proven results </strong></h2>
+<p>SmartTrack® material and SmartForce® features are clinically proven to achieve 75% more predictable tooth movement.</p>
+<h2><strong>Better fit, better comfort </strong></h2>
+<p>Aligners made from SmartTrack material are more comfortable, better fitting, and easier to put on and take off.</p>
+<h2><strong>Effective for a wide variety of cases</strong></h2>
+<p>Proprietary SmartForce features and SmartTrack material make Invisalign treatment effective for complex cases. With innovations like these, your doctor can move your teeth more precisely.</p>
+<h2><strong>Unique feature for teens </strong></h2>
+<p>Invisalign clear aligners for teens contain compliance indicators that fade from blue to clear to help gauge wear time.</p>		</div>
+			<a class="link" href="/invisalign.html"><span>learn more</span></a>	</div>
+
+
+</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Main Content row -->
+    <div id="content-row">
+      <div class="row-container">
+        <div class="container">
+          <div class="content-inner row">
+
+            <!-- Left sidebar -->
+
+            <div id="component" class="span12">
+              <!-- Breadcrumbs -->
+
+              <!-- Content-top -->
+
+
+<div id="system-message-container">
+<div id="system-message">
+</div>
+</div>
+                <div class="page-featured page-featured__">
+
+
+
+
+</div>
+
+
+              <!-- Content-bottom -->
+                          </div>
+
+            <!-- Right sidebar -->
+                      </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mainbottom -->
+
+        <!-- Bottom -->
+
+
+    </div>
+
+    </div>
+  </div>
+{% endblock %}
